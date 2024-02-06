@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<title>Philosophy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-red">首頁</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-red">本書簡介</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-red">前言</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-red">導論</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-red">哲學的學門</a>
+
+        <div class="w3-bar-item w3-button w3-hover-red" onclick="myAccFunc1()">
+            東方哲學 <i class="fa fa-caret-down"></i></div>
+        <div id="Acc1" class="w3-hide w3-light-grey w3-card-4">
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">概要</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">印度之一／奧義書；正統宗派之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">印度之二／正統宗派之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">印度之三／耆那教；佛教</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">中國之一／儒家；陰陽家</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">中國之二／道家；墨家</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">古代近東思想</a>
+        </div>
+
+        <div class="w3-bar-item w3-button w3-hover-red" onclick="myAccFunc2()">
+            古代哲學 <i class="fa fa-caret-down"></i></div>
+        <div id="Acc2" class="w3-hide w3-light-grey w3-card-4">
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">概要</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">先蘇期之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">先蘇期之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">詭智學派</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">蘇格拉底</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">柏拉圖之一：理型論</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">柏拉圖之二：認識論、辯證法</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">柏拉圖之三：人類學、倫理學</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">柏拉圖之四：國家論</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">亞里斯多德之一：邏輯</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">亞里斯多德之二：形上學</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">亞里斯多德之三：心理學、倫理學</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">亞里斯多德之四：政治學、詩學</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">斯多噶學派之一：邏輯、物理學</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">斯多噶學派之二：倫理學</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">伊比鳩魯學派</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">懷疑主義；折衷主義</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">新柏拉圖主義</a>
+        </div>
+
+        <div class="w3-bar-item w3-button w3-hover-red" onclick="myAccFunc3()">
+            中世紀哲學 <i class="fa fa-caret-down"></i></div>
+        <div id="Acc3" class="w3-hide w3-light-grey w3-card-4">
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">概要</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">教父時期</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">奧古斯丁之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">奧古斯丁之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">早期士林哲學之一／伊利基那；坎特伯利的安瑟姆</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">早期士林哲學之二／共相問題；亞貝拉</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">阿拉伯哲學</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">中期士林哲學之一／貝肯；波拿文圖拉；魯爾</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">中期士林哲學之二／大亞伯特；聖多瑪斯之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">中期士林哲學之三／聖多瑪斯之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">中期士林哲學之四／聖多瑪斯之三</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">中期士林哲學之五／鄧斯．司克脫；艾克哈特</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">晚期士林哲學／奧坎的威廉</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">庫薩努斯</a>
+        </div>
+
+        <div class="w3-bar-item w3-button w3-hover-red" onclick="myAccFunc4()">
+            文藝復興 <i class="fa fa-caret-down"></i></div>
+        <div id="Acc4" class="w3-hide w3-light-grey w3-card-4">
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">概要</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">自然科學；培根</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">人文主義</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">義大利哲學</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">政治、法律理論；宗教改革</a>
+        </div>
+
+        <div class="w3-bar-item w3-button w3-hover-red" onclick="myAccFunc5()">
+            啟蒙時期 <i class="fa fa-caret-down"></i></div>
+        <div id="Acc5" class="w3-hide w3-light-grey w3-card-4">
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">概要</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">理性主義之一／笛卡爾之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">理性主義之二／笛卡爾之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">理性主義之三／史賓諾沙之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">理性主義之四／史賓諾沙之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">理性主義之五／萊布尼茲之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">理性主義之六／萊布尼茲之二；窩爾夫</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">經驗主義之一／霍布斯</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">經驗主義之二／洛克之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">經驗主義之三／洛克之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">經驗主義之四／巴克萊</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">經驗主義之五／休姆之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">經驗主義之六／休姆之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">法國啟蒙運動之一／巴斯卡；伏爾泰</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">法國啟蒙運動之二／孟德斯鳩；維科</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">法國啟蒙運動之三／盧梭</a>
+        </div>
+
+        <div class="w3-bar-item w3-button w3-hover-red" onclick="myAccFunc6()">
+            德國觀念論 <i class="fa fa-caret-down"></i></div>
+        <div id="Acc6" class="w3-hide w3-light-grey w3-card-4">
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">概要</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">康德之一：純粹理性批判之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">康德之二：純粹理性批判之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">康德之三：純粹理性批判之三</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">康德之四：實踐理性批判</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">康德之五：判斷力批判</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">費希特之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">費希特之二；史萊瑪赫</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">謝林</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">黑格爾之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">黑格爾之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">黑格爾之三</a>
+        </div>
+
+        <div class="w3-bar-item w3-button w3-hover-red" onclick="myAccFunc7()">
+            十九世紀哲學 <i class="fa fa-caret-down"></i></div>
+        <div id="Acc7" class="w3-hide w3-light-grey w3-card-4">
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">概要</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">叔本華</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">齊克果</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">實證主義</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">黑格爾左派</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">馬克思之一；恩格斯</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">馬克思之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">實用主義</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">新康德主義；歸納形上學</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">尼采之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">尼采之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">狄爾泰</a>
+        </div>
+
+        <div class="w3-bar-item w3-button w3-hover-red" onclick="myAccFunc8()">
+            二十世紀哲學 <i class="fa fa-caret-down"></i></div>
+        <div id="Acc8" class="w3-hide w3-light-grey w3-card-4">
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">概要</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">自然科學之一／物理學之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">自然科學之二／物理學之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">自然科學之三／生物學之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">自然科學之四／生物學之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">生命哲學</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">現象學之一／胡賽爾之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">現象學之二／胡賽爾之二；梅洛龐蒂</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">現象學之三／卡謬；馬賽爾</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">海德格之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">海德格之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">現代邏輯之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">現代邏輯之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">維根斯坦之一</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">維根斯坦之二</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">分析哲學之一／弗列格；維也納學圈</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">分析哲學之二／羅素</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">分析哲學之三／語言行動理論；後設倫理學</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">分析哲學之四／存有論</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">哈特曼；懷德海</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">馬克思主義</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">批判理論</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">社會哲學</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">批判理性主義</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">人類學；詮釋學</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-red">結構主義</a>
+        </div>
+
+        <a href="#" class="w3-bar-item w3-button w3-hover-red">索引</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-red">參考書目</a>
+
+    </div>
+
+    <div class="w3-main" style="margin-left:200px">
+        <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+            <div class="w3-container">
+                <h1>世界哲學史</h1>
+            </div>
+        </div>
+
+        <div class="w3-container">
+            <h3><b>本書簡介</b></h3>
+            <p>關於存有的意義、萬物的本質、人在世界中的地位如何的問題，是我們的思想根基。
+                因此，哲學_愛智_也被視為一切科學之「母」。</p>
+
+            <p>從古代到今日，哲學所提供的答案隨境況而不斷改變，但在本質上，哲學卻又是始終如一。
+                因此，瞭解哲學的工作永遠也是對它的歷史的觀察。</p>
+
+            <p>《德國國民必讀圖解世界哲學史》是一本哲學的理論史，由哲學家本身極其重要的主張、概念的介紹貫串而成，
+                同時以彩色的圖業做具體的呈現。</p>
+
+            <p>本書圖文並陳的系統以兩頁為一個單位，左頁是彩色的圖像，右頁則是詳細的文字解說。</p>
+
+            <p><b>跟之前所有的版本一樣，第十五版也經過了作者的修訂與更新</b></p>
+        </div>
+
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+        function myAccFunc1() {
+            var x = document.getElementById("Acc1");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function myAccFunc2() {
+            var x = document.getElementById("Acc2");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function myAccFunc3() {
+            var x = document.getElementById("Acc3");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function myAccFunc4() {
+            var x = document.getElementById("Acc4");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function myAccFunc5() {
+            var x = document.getElementById("Acc5");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function myAccFunc6() {
+            var x = document.getElementById("Acc6");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function myAccFunc7() {
+            var x = document.getElementById("Acc7");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+        function myAccFunc8() {
+            var x = document.getElementById("Acc8");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-green";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-green", "");
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
